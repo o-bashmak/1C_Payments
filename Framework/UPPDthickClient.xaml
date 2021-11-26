@@ -3,7 +3,7 @@
     <x:Property Name="in_Summ" Type="InArgument(x:String)" />
     <x:Property Name="in_description" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>968,1094</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>968,1997</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="64">
@@ -96,32 +96,73 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="476,1029" sap2010:WorkflowViewState.IdRef="Sequence_39">
+  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="598,1932" sap2010:WorkflowViewState.IdRef="Sequence_39">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="434,937" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="556,1840" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="284,648" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,1551" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,357" sap2010:WorkflowViewState.IdRef="Sequence_42">
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Esc" sap:VirtualizedContainerService.HintSize="480,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Esc" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V1">
+            </uix:NKeyboardShortcuts>
+            <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="480,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Переключить интерфейс'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="17, 82, 141, 22" FriendlyName="'Переключить интерфейс'" FullSelectorArgument="&lt;uia name='Интерфейсы' role='панель инструментов' /&gt;&lt;uia name='Переключить интерфейс' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='Интерфейсы' role='панель инструментов' /&gt;&lt;uia name='Переключить интерфейс' role='кнопка' automationid='' check:fulltext='Переключить интерфейс' /&gt;" Guid="3ad4ff19-7263-4b86-a7ed-24f7e4abe9eb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAaCAYAAAC3r744AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK1SURBVGhD7Zc9buswDMcf0At1yAV6jaAn8NStm3ePnd7wgARdcgkDGXKJDEEvUaCzHynrg2RIx7YKtEU5/BBLokiK/ltS/ny8vw2OU4OLyKnGReRU4yJyqnEROdW4iJxqXERONS4ipxoXkVONLqJzOzT3d8OD5LEdLpq986uxRSQFo/U535zjcIjv7NRuh8NZs6nHRfSTWPEOLrtNOEWadq+OW7z+fb46if69PKm260QEz91jOuKKwht41vpt+xRjD+OboeuPJVZMfJwz2mX7fpvHm7bkSfNLzyVGLGhoQzzqH4EiU1sL3R/vL/H1OEvrd9mV9T7cb+Izr9d0fXmuH2esd/GX/QiokCwBIatEdIAXTgWS+huS0CW86O1wmrIPv0JAwka1h0WN9kfYpqGou3GuPSf2hSLHtrBj8yew/LG5wq9sL61fB/3BPtiOffjczapv7CO5HkBAXaxZEFTyj20BimdKQMgqEZWvIjEmwefgeRz7TXsQAH4Rcqul8dW4sZBiPBWVzQm/MZee+BV22GZ5ki+aYvm7WuPcOIEb9Uv9zM+c+qKtkiuLU89KEZGXSOBz6CINe1xsvw92XU/GaHwaN/zil6OLCHelXEgy5wRbedit5LpEm41JwUUsf8z2VpyF9WM7Ec4Nz6UOU/5u5voJrDzO6HZIkoPFhMXCM27H+vapLAb7aCFo/Ct7LK5+nGVYTkVQzK/SZmOWiAx/U35le2n98p0IRIWE3RuElXzY/vRcuf30cTaHlRdrCBwWgknSixwsTOm37UsMevHDO0/+N0GLkuOXiyS9WGfoHLDJu5xcl2iHoies48zwN+X3ur2wfnme8JP7DX9GrswexUjvoyvQRbQSdYHObG7WzxLRF+Mi+kb81Pp9qoic34mLyKnGReRU4yJyqnEROdW4iJxK3ob/pziwKnRR6DUAAAAASUVORK5CYII=" InformativeScreenshot="0a190198faddb8395249968ec8f6f76b.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Бюджетирование'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1, 289, 371, 22" FriendlyName="'Бюджетирование'" FullSelectorArgument="&lt;uia name='Бюджетирование' role='элемент меню' /&gt;" FuzzySelectorArgument="&lt;uia name='Бюджетирование' role='элемент меню' automationid='' check:fulltext='Бюджетирование' /&gt;" Guid="f1d3cd1c-f6cd-41be-9d1d-0956e66f75a7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXYAAAAaCAYAAACjH3fwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMySURBVHhe7Zw7buMwEEAD5EIBUqXci7hwkcqHcMoUPkBqt7qESwOBr5DG2Gab9FtwOaQoDUeiI2ctrFZ6Ah4k8TNDuXgiRkjuttutc78/3a+f76MiOQAAYHwQOwDAzEDsAAAzA7EDAMwMxA4AMDMQOwDAzCiK3d059/b86J4fr0PmyNxOPJMYAADGoSj2IOhvHjLXxrOJAQBgHIpil913OkTUJd7fui8AmWvj2cQAADAOg8V+6bByR+wAAP+Om4hdDi33b4n949VtHu7dD83q1Z37xgIAQJFBYu8rt9jjJmJH5AAAf82XYpfzNaQ5Np5N3AGxAwDchEFit4e09ZVnxhJ7035YN+WazUs+9vjSLeFUqye3O/j+UOZZu6NvO++f/NwqzvXtu1Was3bVh8Sq3C7FSfjxem0SI+XY+HndGN3Ykjs8i477UK9P+tSz6fbsN1G/UWk9/c8EAEviarHr+1KfnG08m7hDkG8SWyQJOEosCnd3OPnxJy9yL+i9XMf5IvZG4o30/ByR+z6KvdJS94j4tYhLEpX75jqts77fBAnHdZyDnKPEKy/Xpl3E6/NmcQQ/PrVnqNylNZXWc/GZAGARTHjHfnKVl7XIuxV+u/PNx/uxSWidOGoHbiRnXySyUy5JMV7XeQ5tX56rXUfWrmLlOduXgoyRl1DT1ztetYdzz3rseP1MALAIJl2KCWUTEXtoF0GXxK76bBxd4kjyr/vS7jrdZ5g4cn2s16P7slxDxG7b6zXsRMBK8sXxqr13PZeeCQAWwbRKMVpiQZL1jj20x/veUowuaeg44dqLTs4ivHRf5wjxUgyb39yHl0MWN15L3PSykFJMWxIZUIpJ6/LX8mJq4uzbOKU1ldZz8ZkAYBFMa8eedtY1eY09jkkfBtuPp6rUovFzpbQRZBli10KXHXwTT8bU4+2HRiNFWVvzoVP1bXyOrz+e5nGaNer6vJd56pOYQ8Tet56LzwQAi2CQ2K8hzbHxbOLbocowidJHyRHIxAsAMAGKYh/y16alQ+baeDbxXEDsADA1imLn3/YCAPyfFMV+a2xiAAAYB8QOADAzEDsAwMxA7AAAs+LT/QF8SfC/3X4zegAAAABJRU5ErkJggg==" InformativeScreenshot="c85216c26eec4a7d97633ac585b0d366.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8PopupBarShadow' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Заявки'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="280, 33, 45, 19" FriendlyName="'Заявки'" FullSelectorArgument="&lt;uia name='Главное меню' role='панель инструментов' /&gt;&lt;uia name='Заявки' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='Главное меню' role='панель инструментов' /&gt;&lt;uia name='Заявки' role='кнопка' automationid='' check:fulltext='Заявки' /&gt;" Guid="37a4ef7b-8309-41cc-9624-ab43fd065c91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAXCAYAAACiaac3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFZSURBVFhH7VW7rcMwDHzAW8iFF8gahifwEO6zRNx5iQAusoQLI0s8IDWjE0WL9CcvQYoogIoDojNN8siT83P7u9K3I4tIBVlEKsgiUsFDEdOpoqb4pQNQV9SP23Gfxr6Ic+Uab2kK58mdG3VOCS/YqaNjUdFl89ln8bQIswn8FpsVJR3PEtdRXwsPC3J8jAVifNysG1ANfljwsHRpHLGF/0XAVqF4H4oYjO1c1BdsuxWvm/L5QgzzVkDkQw41DHm+xPN2GmEnJwSX2yVH4eXEpcG5gcCvNyETLx0cJ8ID+L3BbRWDi3l0jMYLd4In3ZwGFiOTU83eULhdizNN+Ony3Wp8HlhQW5LjL6GWzb+NXRFsDV08bgIXXD63+AzHdfP0fEN6E3sihFccYoyF3hEBmP8JZQPNwxJS0FxCLWLOYfPo5vS7iJ83866Ib0EWkQqyiFSQRaSBK90B5hG7AYTI3bwAAAAASUVORK5CYII=" InformativeScreenshot="79b7a90abdf8e0dd49d76e74213896d8.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Down+Enter" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -129,100 +170,61 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
-              <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ClickType="Single" DisplayName="Click 'Переключить интерфейс'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="17, 82, 141, 22" FriendlyName="'Переключить интерфейс'" FullSelectorArgument="&lt;uia name='Интерфейсы' role='панель инструментов' /&gt;&lt;uia name='Переключить интерфейс' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='Интерфейсы' role='панель инструментов' /&gt;&lt;uia name='Переключить интерфейс' role='кнопка' automationid='' check:fulltext='Переключить интерфейс' /&gt;" Guid="3ad4ff19-7263-4b86-a7ed-24f7e4abe9eb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAaCAYAAAC3r744AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK1SURBVGhD7Zc9buswDMcf0At1yAV6jaAn8NStm3ePnd7wgARdcgkDGXKJDEEvUaCzHynrg2RIx7YKtEU5/BBLokiK/ltS/ny8vw2OU4OLyKnGReRU4yJyqnEROdW4iJxqXERONS4ipxoXkVONLqJzOzT3d8OD5LEdLpq986uxRSQFo/U535zjcIjv7NRuh8NZs6nHRfSTWPEOLrtNOEWadq+OW7z+fb46if69PKm260QEz91jOuKKwht41vpt+xRjD+OboeuPJVZMfJwz2mX7fpvHm7bkSfNLzyVGLGhoQzzqH4EiU1sL3R/vL/H1OEvrd9mV9T7cb+Izr9d0fXmuH2esd/GX/QiokCwBIatEdIAXTgWS+huS0CW86O1wmrIPv0JAwka1h0WN9kfYpqGou3GuPSf2hSLHtrBj8yew/LG5wq9sL61fB/3BPtiOffjczapv7CO5HkBAXaxZEFTyj20BimdKQMgqEZWvIjEmwefgeRz7TXsQAH4Rcqul8dW4sZBiPBWVzQm/MZee+BV22GZ5ki+aYvm7WuPcOIEb9Uv9zM+c+qKtkiuLU89KEZGXSOBz6CINe1xsvw92XU/GaHwaN/zil6OLCHelXEgy5wRbedit5LpEm41JwUUsf8z2VpyF9WM7Ec4Nz6UOU/5u5voJrDzO6HZIkoPFhMXCM27H+vapLAb7aCFo/Ct7LK5+nGVYTkVQzK/SZmOWiAx/U35le2n98p0IRIWE3RuElXzY/vRcuf30cTaHlRdrCBwWgknSixwsTOm37UsMevHDO0/+N0GLkuOXiyS9WGfoHLDJu5xcl2iHoies48zwN+X3ur2wfnme8JP7DX9GrswexUjvoyvQRbQSdYHObG7WzxLRF+Mi+kb81Pp9qoic34mLyKnGReRU4yJyqnEROdW4iJxK3ob/pziwKnRR6DUAAAAASUVORK5CYII=" InformativeScreenshot="0a190198faddb8395249968ec8f6f76b.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                  </uix:NClick.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NClick>
-                <uix:NClick ClickType="Single" DisplayName="Click 'Бюджетирование'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="1, 289, 371, 22" FriendlyName="'Бюджетирование'" FullSelectorArgument="&lt;uia name='Бюджетирование' role='элемент меню' /&gt;" FuzzySelectorArgument="&lt;uia name='Бюджетирование' role='элемент меню' automationid='' check:fulltext='Бюджетирование' /&gt;" Guid="f1d3cd1c-f6cd-41be-9d1d-0956e66f75a7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXYAAAAaCAYAAACjH3fwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMySURBVHhe7Zw7buMwEEAD5EIBUqXci7hwkcqHcMoUPkBqt7qESwOBr5DG2Gab9FtwOaQoDUeiI2ctrFZ6Ah4k8TNDuXgiRkjuttutc78/3a+f76MiOQAAYHwQOwDAzEDsAAAzA7EDAMwMxA4AMDMQOwDAzCiK3d059/b86J4fr0PmyNxOPJMYAADGoSj2IOhvHjLXxrOJAQBgHIpil913OkTUJd7fui8AmWvj2cQAADAOg8V+6bByR+wAAP+Om4hdDi33b4n949VtHu7dD83q1Z37xgIAQJFBYu8rt9jjJmJH5AAAf82XYpfzNaQ5Np5N3AGxAwDchEFit4e09ZVnxhJ7035YN+WazUs+9vjSLeFUqye3O/j+UOZZu6NvO++f/NwqzvXtu1Was3bVh8Sq3C7FSfjxem0SI+XY+HndGN3Ykjs8i477UK9P+tSz6fbsN1G/UWk9/c8EAEviarHr+1KfnG08m7hDkG8SWyQJOEosCnd3OPnxJy9yL+i9XMf5IvZG4o30/ByR+z6KvdJS94j4tYhLEpX75jqts77fBAnHdZyDnKPEKy/Xpl3E6/NmcQQ/PrVnqNylNZXWc/GZAGARTHjHfnKVl7XIuxV+u/PNx/uxSWidOGoHbiRnXySyUy5JMV7XeQ5tX56rXUfWrmLlOduXgoyRl1DT1ztetYdzz3rseP1MALAIJl2KCWUTEXtoF0GXxK76bBxd4kjyr/vS7jrdZ5g4cn2s16P7slxDxG7b6zXsRMBK8sXxqr13PZeeCQAWwbRKMVpiQZL1jj20x/veUowuaeg44dqLTs4ivHRf5wjxUgyb39yHl0MWN15L3PSykFJMWxIZUIpJ6/LX8mJq4uzbOKU1ldZz8ZkAYBFMa8eedtY1eY09jkkfBtuPp6rUovFzpbQRZBli10KXHXwTT8bU4+2HRiNFWVvzoVP1bXyOrz+e5nGaNer6vJd56pOYQ8Tet56LzwQAi2CQ2K8hzbHxbOLbocowidJHyRHIxAsAMAGKYh/y16alQ+baeDbxXEDsADA1imLn3/YCAPyfFMV+a2xiAAAYB8QOADAzEDsAwMxA7AAAs+LT/QF8SfC/3X4zegAAAABJRU5ErkJggg==" InformativeScreenshot="c85216c26eec4a7d97633ac585b0d366.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8PopupBarShadow' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
-                  </uix:NClick.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NClick>
-                <uix:NClick ClickType="Single" DisplayName="Click 'Заявки'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="280, 33, 45, 19" FriendlyName="'Заявки'" FullSelectorArgument="&lt;uia name='Главное меню' role='панель инструментов' /&gt;&lt;uia name='Заявки' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='Главное меню' role='панель инструментов' /&gt;&lt;uia name='Заявки' role='кнопка' automationid='' check:fulltext='Заявки' /&gt;" Guid="37a4ef7b-8309-41cc-9624-ab43fd065c91" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAXCAYAAACiaac3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFZSURBVFhH7VW7rcMwDHzAW8iFF8gahifwEO6zRNx5iQAusoQLI0s8IDWjE0WL9CcvQYoogIoDojNN8siT83P7u9K3I4tIBVlEKsgiUsFDEdOpoqb4pQNQV9SP23Gfxr6Ic+Uab2kK58mdG3VOCS/YqaNjUdFl89ln8bQIswn8FpsVJR3PEtdRXwsPC3J8jAVifNysG1ANfljwsHRpHLGF/0XAVqF4H4oYjO1c1BdsuxWvm/L5QgzzVkDkQw41DHm+xPN2GmEnJwSX2yVH4eXEpcG5gcCvNyETLx0cJ8ID+L3BbRWDi3l0jMYLd4In3ZwGFiOTU83eULhdizNN+Ony3Wp8HlhQW5LjL6GWzb+NXRFsDV08bgIXXD63+AzHdfP0fEN6E3sihFccYoyF3hEBmP8JZQPNwxJS0FxCLWLOYfPo5vS7iJ83866Ib0EWkQqyiFSQRaSBK90B5hG7AYTI3bwAAAAASUVORK5CYII=" InformativeScreenshot="79b7a90abdf8e0dd49d76e74213896d8.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
-                  </uix:NClick.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NClick>
-                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Down+Enter" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NKeyboardShortcuts>
-              </Sequence>
-              <Sequence DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_43">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ClickType="Single" DisplayName="Click 'История отборов'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="280, 132, 29, 22" FriendlyName="'История отборов'" FullSelectorArgument="&lt;uia idx='10' role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' automationid='' check:fulltext='История отборов' /&gt;" Guid="ce51f8f4-8758-444e-a857-d28c5935e12b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAaCAYAAAA5WTUBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVEhL7ZNLTxNhFIZZ+GOMlxgX7FjpysSVOxIVSDMFi4mFaqWYBhQFFUQuqYgkQMulkKImEFscerMtYJFLoSgXC0Sa0sRGWhA0eHud+XTGtvORTGIiLjjJk0nOl3nPM2dmMjQaDfaajO3NJew1+xIC/69Eia4UKlUhdNy1rr5RxGjqEmlsNBD0+jIUa64QaFlyoEq0thkxvxDC+9g6hEpsbGDl3SoWQ0uYDgYxGZiGb2QUz1k7fMOjyC8okOTIhSqxHBpHdXUNWLsLcwuLvzWAwEwQo/4xPLNZ0dZuwv26Bng8XigZJbmHliWHXb8JPtTQ1AR2yIn1eIJIvF1ahnd4hDx9T68FE1NTYBjmrwR4qBJzC68RT8S5VzKPNqMJbo+PSIQja3A43bANshifnIL2qg7DwRACqwnc6J+FosUryZIDVcI/8RJfduJk8Fo0iofNLZiZfYOPW1uw9D1BV3cPyq9XkLPkOm9wSLLkQJVwe91weV3c046TcH7Y7bs13If6AQ3cH6EtKRUFLDY/HnTZCdm1VjHjcXsJsk8eSMH8qChljgBVwvHCgZ3PMYKwkbLyCqyGI6i5V4+iYi3ppdeZqqcpOckiuwnwUCWGnCwReDXmQzD4axu6a3pRovCimvQG7WOYCCwS+Dpd3ivJMreoCen9ZKgSzqRN8PB1WasTJZT5KtJLr1P6TkmWHKgSLGUTl9QaUSI3jyG99E2c0LZKsuRAlbCxVmxux0T48vp8UDD5yMlVwOVykd7XH6lkqZskWXKgSgxY+xHb+LOJaDRMhkbWIuTcPx/BzvfUTWx9AzIv1Euy5ECVMFu6EYrFJHSaO8h5VlEzlj8BKxz8VeBITpUkSw5Uic6eDpi6jVT480xVA44ztTimqMbRvDs4zA0/dO4WDp69KcmSA1XiX7MvIbAvIZAx0FeJvaUSPwHFONJPBta88AAAAABJRU5ErkJggg==" InformativeScreenshot="4c5c3ec36459482ed11f15dc05718ada.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
-                  </uix:NClick.Target>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NClick>
-                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Down" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(down)][u(hk)]" Version="V1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NKeyboardShortcuts>
-                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Enter" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NKeyboardShortcuts>
-                <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DelayBefore="3" DisplayName="F9" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][k(f9)][u(hk)]" Version="V1">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NKeyboardShortcuts>
-              </Sequence>
             </Sequence>
-            <ui:CommentOut Body="{x:Null}" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+            <Sequence DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="480,66" sap2010:WorkflowViewState.IdRef="Sequence_43">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'История отборов'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="280, 132, 29, 22" FriendlyName="'История отборов'" FullSelectorArgument="&lt;uia idx='10' role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' automationid='' check:fulltext='История отборов' /&gt;" Guid="ce51f8f4-8758-444e-a857-d28c5935e12b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAaCAYAAAA5WTUBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVEhL7ZNLTxNhFIZZ+GOMlxgX7FjpysSVOxIVSDMFi4mFaqWYBhQFFUQuqYgkQMulkKImEFscerMtYJFLoSgXC0Sa0sRGWhA0eHud+XTGtvORTGIiLjjJk0nOl3nPM2dmMjQaDfaajO3NJew1+xIC/69Eia4UKlUhdNy1rr5RxGjqEmlsNBD0+jIUa64QaFlyoEq0thkxvxDC+9g6hEpsbGDl3SoWQ0uYDgYxGZiGb2QUz1k7fMOjyC8okOTIhSqxHBpHdXUNWLsLcwuLvzWAwEwQo/4xPLNZ0dZuwv26Bng8XigZJbmHliWHXb8JPtTQ1AR2yIn1eIJIvF1ahnd4hDx9T68FE1NTYBjmrwR4qBJzC68RT8S5VzKPNqMJbo+PSIQja3A43bANshifnIL2qg7DwRACqwnc6J+FosUryZIDVcI/8RJfduJk8Fo0iofNLZiZfYOPW1uw9D1BV3cPyq9XkLPkOm9wSLLkQJVwe91weV3c046TcH7Y7bs13If6AQ3cH6EtKRUFLDY/HnTZCdm1VjHjcXsJsk8eSMH8qChljgBVwvHCgZ3PMYKwkbLyCqyGI6i5V4+iYi3ppdeZqqcpOckiuwnwUCWGnCwReDXmQzD4axu6a3pRovCimvQG7WOYCCwS+Dpd3ivJMreoCen9ZKgSzqRN8PB1WasTJZT5KtJLr1P6TkmWHKgSLGUTl9QaUSI3jyG99E2c0LZKsuRAlbCxVmxux0T48vp8UDD5yMlVwOVykd7XH6lkqZskWXKgSgxY+xHb+LOJaDRMhkbWIuTcPx/BzvfUTWx9AzIv1Euy5ECVMFu6EYrFJHSaO8h5VlEzlj8BKxz8VeBITpUkSw5Uic6eDpi6jVT480xVA44ztTimqMbRvDs4zA0/dO4WDp69KcmSA1XiX7MvIbAvIZAx0FeJvaUSPwHFONJPBta88AAAAABJRU5ErkJggg==" InformativeScreenshot="4c5c3ec36459482ed11f15dc05718ada.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Down" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(down)][u(hk)]" Version="V1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Enter" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DelayBefore="3" DisplayName="F9" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" Shortcuts="[d(hk)][k(f9)][u(hk)]" Version="V1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+            </Sequence>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="480,51" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -230,14 +232,20 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="242,66" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="480,1064" sap2010:WorkflowViewState.IdRef="Sequence_44">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch DisplayName="Try Enter Sum" sap:VirtualizedContainerService.HintSize="434,465" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Enter Sum" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Сумма BYN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Summ]" Version="V1">
                     <uix:NTypeInto.Target>
@@ -252,10 +260,10 @@
                   </uix:NTypeInto>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,303" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -263,13 +271,13 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                       </ActivityAction.Argument>
-                      <Sequence sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                      <Sequence sap:VirtualizedContainerService.HintSize="242,236" sap2010:WorkflowViewState.IdRef="Sequence_45">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ClickType="Single" DisplayName="Click 'Расчеты с контрагентами'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                        <uix:NClick ClickType="Single" DisplayName="Click 'Расчеты с контрагентами'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="46, 240, 152, 18" FriendlyName="'Расчеты с контрагентами'" FullSelectorArgument="&lt;uia name='Расчеты с контрагентами' role='вкладка' /&gt;&lt;uia name='Расчеты с контрагентами' role='элемент вкладки' /&gt;" FuzzySelectorArgument="&lt;uia name='Расчеты с контрагентами' role='вкладка' /&gt;&lt;uia name='Расчеты с контрагентами' role='элемент вкладки' automationid='' check:fulltext='Расчеты с контрагентами' /&gt;" Guid="0973c3a4-c5d4-451c-a24f-5b8e240d4dd3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJwAAAAWCAYAAAA1k/XzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMjSURBVGhD7Ze9ilNBFMeFfaFtU/oiKVLnJdIoC6bRRwhrdRcEWS3UImBhLNZiES2UwBoQUSEW22yKcf6T+Thz7nzk7t5EkFP8yMyd8zVz/zNzc09t1koQDoUITjgoLcHdXP9QHxZn6uWzR+p580AQOgPtQEPQEtdXJLj1ry/G+P3bp+r3p1N1s5wJQmegHWgIWoKmqMa84KBGGFx9fac2V1qdiUCCsCvQELQETdGTzgvu8+Uro0rXF4Q+gKagLdf3gnv94rH6+f2jHxCEPoCmoC3X94LDx55rF1meqPHxkbrvGajpPGEnCBaqrdsJbniiVrm+IDD6FdymUdPjkVpQG0Eg9Cq41XwU+minrtqlFuWQPr8wz70fjanb3nY4Us0SMSBq52+ZNEz4ltyJm6mBEvxgS2xYTW5zRXl83lyto8S8NJk1iz9bbM7k2nSro5gP4y6O87exaY7VbOCfB/s8dxecLxgFkcXjdraoRi/SdOZeHiYyMD5+EpHtdozHSPWjMQf3seRqoDZbPz1GxaYxvrZvFtu+mFJtrVqJyM0mTd0KxCeKZcmtTSlvq0+JYmBDhPiY53gSDhMfAz5EiK2YCXo94fgYig5iZMUy/FVMJ+58PXkBJoWfqS9bM2Gsax/jBIl2OvMt1Zqxa8XYXATxaLtd1yy3Nl3qKObTG8HMHT54N8R3+2vrnrOYFfYmOHNqkGsoLrZtv5gkJl76HmS5adssFvqZ+nI1UHAKNfPGLCr95x355ubF8xZqpYLrsma5tSnl5f1yPtR1pNt64+E2YOMLnHrsuYlTYY+CC9framYFoNvV64zEjG1ZLtan7Zrgdr9SMa5jkJfbz5VK1sbVqtu5NavPIcTvUkc1n7af6vm5ts9BT06eo8LeBIcJuOMduyQUiO8ie5LpF02/jww0JrXl34csd3SVVK7Uag0a6hd9GOuYoSaSn+bheXmtODUT88qtWXUOJEaXOrrlC77wCX8CWY4KdxOccCu6vKD/DRHcP0AEt22L4IS9kxTcm/Mn/qEg9AnVlhfc+dlDdf3nmx8QhD6ApnDCQV/4lStVOCBr9RcZjH1cGdX2eQAAAABJRU5ErkJggg==" InformativeScreenshot="f3d2f3569e37fa28effe7c5157e45149.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
                           </uix:NClick.Target>
@@ -280,7 +288,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Сумма BYN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Summ]" Version="V1">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Сумма BYN'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Summ]" Version="V1">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="134, 312, 100, 19" FriendlyName="'111,00'" FullSelectorArgument="&lt;uia name='Расчеты с контрагентами' role='вкладка' /&gt;&lt;uia helpText='Сумма в валюте взаиморасчетов' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Расчеты с контрагентами' role='вкладка' /&gt;&lt;uia helpText='Сумма в валюте взаиморасчетов' role='поле' automationid='' check:text='111,00' /&gt;" Guid="2b114b57-29ad-41df-a6c4-022140dae9ed" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAAXCAYAAADnaAq1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVGhD7Zm9DoIwFEZ5R98CHoLF+AauxB03NxaNJi6MLCydWcXEyeHaGiCX8mcRoYnfSY5Nb4xDT+pPdOh5I2ivCGS5VaDraUeH/QZaYiPQewgmRZ3p4y6MRaCZQCCNlXteXA4CabQd2NxyEEijOihfUEQZrdnBjZoXri+5fPWcUvmYXpLeOYcHchxn0D8IFFMgik3twE3nTBkvFYK89149P6fA755z9EB9/Emg4lDdpONGmM6l24yodmuIom33nKMHGhKBRgTyQvkWFsaNfdecowdStK2lCLRwoCERaOFAira1FIFGBJrjM0ihVgQaE2jib3F9KwJ9PK/v8TtoIsqD+14ZqLodZnJ4IBMR6IdyEMhyEMhyJg10PeIfVZtsBIJ2ikBWe6MXLRcScVC8zYYAAAAASUVORK5CYII=" InformativeScreenshot="fd9a914c39ec99c1502c7837f16c46dc.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector">
                               <uix:TargetAnchorable.Anchors>
@@ -302,7 +310,7 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Alt+Ctr+F - perehod na druguyu vkladku" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" Shortcuts="[d(hk)][d(alt)d(ctrl)]f[u(ctrl)u(alt)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Alt+Ctr+F - perehod na druguyu vkladku" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" Shortcuts="[d(hk)][d(alt)d(ctrl)]f[u(ctrl)u(alt)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -310,10 +318,18 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
-              <TryCatch DisplayName="Try Enter Description" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <Assign sap:VirtualizedContainerService.HintSize="438,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[in_description]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">bla bla bla bla summa</InArgument>
+                </Assign.Value>
+              </Assign>
+              <TryCatch DisplayName="Try Enter Description" sap:VirtualizedContainerService.HintSize="438,443" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -325,10 +341,10 @@
                   </uix:NTypeInto>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,135" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -336,7 +352,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                       </ActivityAction.Argument>
-                      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_46">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -364,6 +380,36 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBetweenShortcuts="2" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NKeyboardShortcuts>
+              <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="438,22" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                <ui:GetFromClipboard.Result>
+                  <OutArgument x:TypeArguments="x:String">[in_description]</OutArgument>
+                </ui:GetFromClipboard.Result>
+              </ui:GetFromClipboard>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Комментарий'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_description]" Version="V1">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="462, 591, 225, 19" FriendlyName="'Оплата по'" FullSelectorArgument="&lt;uia helpText='Комментарий к документу' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia helpText='Комментарий к документу' role='поле' automationid='' check:text='Оплата по лицевому счету 207319776969 за услуги связи за апрель 2020 согласно счету-акту №' /&gt;" Guid="d53da23f-15e3-49f3-abd4-eb89ce848232" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOUAAAAXCAYAAAD0k4gEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASWSURBVHhe7VyxbhsxDO0/5i+aj8gS9A8y1ujubt08tEVdZMmYxYvnrPHc4SpSovQoibo7tIndhgQecuJRJI/ik+5coO+mX8+Tw+G4HDgpHY4LQybl/fdP05fPHxwOxxlA/GtISTdcXFzOI8w/J6WLy+XILCmv3v9wOByvABEnpcNxIRBZQMqH6XZ/mqbjadrtn6ZD0B32j41Dx9sG90iSw/ah0p9U31xvi22Rp+lW+Qn9dlfFuTlOu2Qnup695f/jIO7VXextEuxvM5+19gsgMktKfsAQ9DpPfpg2x2l1QMd/jNCg0/6YegT6I5DocET9adrcpDkIsqPGJj9if/MIBIw+owApTfsK4t/U01zp6RBrn65N/2vtl0FklpTdQqpiOxwatJHzaclkxVNEGlmDTpeWrD0S60bPcWC83D/okUwA0/9ae7AZQWSWlH3yleLIEZ4l7xSBuEnFIvrwQEUvScedR0naOVtbjVH8neyux8EOmkxY0lx8ZipsT682piqWNIDODfI3cmN7taOnujTxjVOHdud8olC82CCY5zjn/jrMxlUgm0i+XpPimIE51frmpCl9x2NFjnhirfKf9LzGqu4Jhv+19soG6449QXOT/Dkp8T4WwLpG1HrLbnDPmh8bIxbELCL6hGuloyLU+speNWrPD4GKnnKwcjsEcuzAFzcxfcc3cYh84DuB/UoT8OtTtM95LMi5N56Li+DnSTacPzRlPRZdvdmyD+q9uqFrUgbkbziqXbhe4r/Wc16hzkKW7jci+F9rL/cIuPaaxH/zpMT7uJiDa2q8LNb8OdsEK76lx7lK38xNp8LdvM/mtBYypFGUzslV+6G/Ql7SU43hfm6kYNM2bOUXkBt5Qc48B+xoPBdXwM1azUP7ehxJrklWUE7comtJiaDX42X+tZ7y6n4TZ/sI8b/WvtbHtW1rLjJLSrWjolNZXGwEXEzjmndv2SnQpjMe2iZY80d+M1Bfzb2VBlrgs33NimjsZzay+Dcu8iHUvY7P16EZNmEHbtYkz2/1efcmkViD5lYxZTyIS+BGrePD2wGh/qZsSarRJbGZd0sOy3+jrzab/jzwv9Ze6QFU1/Q81Osis6SkgPrVTwdrFk/GxjUVVRb2equPbzVnzjbBih9zjIVqn6G1x2t8ZVV60VV6jiWLMrJPC2Dllu2D7S7o5Lr4ibXv1YGg86AGrki0IOfueCYu2/fI0uSO+dTjUotiT3Uq9xtSMumjf37DUDm0/m198ss6iGv6X2tfoNYE6kb+RGZJSUF5pw0P0vt3Smsx6QeDbAd6Ipe8OtFpMCLl0DbBik/X5YeMdh7BypFi5mao9I3QfPyBJbwWSdG1fXl9tXJTzyLAZwro78oJxg895T7Wp59zY5cwiksnYC1iG0/pMJd00DcUf7OFMSP1GkvIv4mXyAA6ZY8E7vof6AOJcq9Bnqb/tfYCXHuw4UMnyQJSVk4dBbwzdhb4xWDt/i+Nc8V9WxBxUv5D4JPdOiVfEOeK+9YgMktKFxeX1xUnpYvLhUmXlPff/H8ecDjOhZ9fNy0pHQ7HZcBJ6XBcFJ6n30Ct+zSWHNmOAAAAAElFTkSuQmCC" InformativeScreenshot="be050e6e1d0fcddd0d2e5f7817e414e9.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="372, 591, 90, 19" FriendlyName="'Комментарий'" FullSelectorArgument="&lt;uia name='Комментарий:' role='текстовый' /&gt;" FuzzySelectorArgument="&lt;uia name='Комментарий:' role='текстовый' automationid='' check:fulltext='Комментарий:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAXCAYAAACChfjKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIOSURBVGhD7Vk7bsMwDC2QC3X1mItk8OxLZCmQwXcokNVbD9B6CeAlV8iSA2TvwJIUJUuyFCFwYgWpCjwkIil+HiUqQN/g9wIFy6MQnwmF+IVx+PmEr+6jEL80iHT6K8QvjEJ8JhTiM2FK/GkHzWYHZ2N0hG6zgmZ/NJsK5iNJ/LBdwXrbOZteG3TQVP3DtobuFLKZj6vEn/cVrJ3T/z/Adb/jLX/ggYsT39cYvIbBMiZdi2OHklpvRl1DayfJDlq2UU1L6X2/+pQ5I88cCNlrg3xjvhyHUUHbax910rd9wGJylbPHxwyEieckK/7UBRBo1re9mvWclJCpiqtMUaRr8JrqIlL6ztKNBLsk2PLg2obtg5sgOXNzFHlmr6lX7CPySYyZiBAvRNCptwLHCudPsqVG8H4s7hY9FehAxZ/Ixd6Pr9fUXN/WseH5Lb5ZLuveyzUgV/vvh8Tj6v6icZKwiTPJoi0mzPa36CNXWOv9eKF1S82Skz2NLXs0oUL8QDcvkGtIrvbfDwniZS0nMD5qxB5tW5Tp73Yx1/TsV5ob3OfJQ2uav3xL8ft5P95UaqqRWzfYGSN2zIicY94RaeIRhmTUjQ/VaBNMzi4moYcTPlzGb+pxDa+JbD2a6FYZgvF70Deuzftl5xqRP/5xfTE4zXoiFOIz4eWJf1YU4jOhEJ8Jh+/yH6isKMRnwQX+AP0STWc4zjzWAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
             </Sequence>
           </Sequence>
         </ActivityAction>

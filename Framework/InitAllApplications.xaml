@@ -3,6 +3,7 @@
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_Buh_Started" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_UPP_Started" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_app_buh" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -71,12 +72,17 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="991,1272" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:Process[]" Name="AllProccesses" />
-      <Variable x:TypeArguments="x:String" Default="Title" Name="txtTitles" />
+      <Variable x:TypeArguments="sd:Process[]" Name="AllProcesses" />
+      <Variable x:TypeArguments="x:String" Name="txtTitles">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -143,52 +149,115 @@
             <av:PointCollection x:Key="ConnectorLocation">200,130 100,130 100,206.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Get Title 1cv8" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <Sequence DisplayName="Get Title 1cv8" sap:VirtualizedContainerService.HintSize="554,683" sap2010:WorkflowViewState.IdRef="Sequence_15">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="scg:List(x:String)" Name="listOfApps">
+              <Variable.Default>
+                <mva:VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String)(New String(){&quot;1cv8&quot;,&quot;1cv8c&quot;})" />
+              </Variable.Default>
+            </Variable>
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-            <Assign.To>
-              <OutArgument x:TypeArguments="sd:Process[]">[AllProccesses]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="sd:Process[]">[System.Diagnostics.Process.GetProcessesByName("1cv8")]</InArgument>
-            </Assign.Value>
-          </Assign>
-          <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" DisplayName="For Each Proccess" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[AllProccesses]">
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="512,500" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[listOfApps]">
             <ui:ForEach.Body>
-              <ActivityAction x:TypeArguments="sd:Process">
+              <ActivityAction x:TypeArguments="x:String">
                 <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd:Process" Name="item" />
+                  <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                 </ActivityAction.Argument>
-                <Sequence sap:VirtualizedContainerService.HintSize="304,253" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,376" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="Assign 1cv8" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[txtTitles]</OutArgument>
+                      <OutArgument x:TypeArguments="sd:Process[]">[AllProcesses]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[txtTitles+item.MainWindowTitle.ToString]</InArgument>
+                      <InArgument x:TypeArguments="sd:Process[]">[System.Diagnostics.Process.GetProcessesByName(item)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[item.MainWindowTitle]" />
+                  <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" DisplayName="For Each Proccess" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[AllProcesses]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="sd:Process">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:Process" Name="proc" />
+                        </ActivityAction.Argument>
+                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[txtTitles]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[txtTitles+proc.MainWindowTitle.ToString+Environment.NewLine]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEach>
                 </Sequence>
               </ActivityAction>
             </ui:ForEach.Body>
+          </ui:ForEach>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="476,375" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign 1cv8c" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="sd:Process[]">[AllProcesses]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="sd:Process[]">[System.Diagnostics.Process.GetProcessesByName("1cv8c")]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" DisplayName="For Each Proccess" sap:VirtualizedContainerService.HintSize="434,183" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[AllProcesses]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="sd:Process">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Process" Name="item" />
+                      </ActivityAction.Argument>
+                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[txtTitles]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[txtTitles+item.MainWindowTitle.ToString+Environment.NewLine]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEach>
+              </Sequence>
+            </ui:CommentOut.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </ui:ForEach>
+          </ui:CommentOut>
         </Sequence>
         <FlowStep.Next>
           <FlowDecision x:Name="__ReferenceID2" Condition="[txtTitles.Contains(&quot;Бухгалтерия для Беларуси,&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
@@ -198,16 +267,16 @@
                 <av:Point x:Key="ShapeLocation">60.5,206.5</av:Point>
                 <av:Size x:Key="ShapeSize">79,87</av:Size>
                 <av:PointCollection x:Key="FalseConnector">139.5,250 169.5,250 169.5,353.5 280,353.5 280,323.5</av:PointCollection>
-                <av:PointCollection x:Key="TrueConnector">60.5,250 40,250 40,359.5 130,359.5 130,389.5</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">60.5,250 50,250 50,429.5 140,429.5 140,459.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
               <FlowStep x:Name="__ReferenceID4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">15,389.5</av:Point>
+                    <av:Point x:Key="ShapeLocation">25,459.5</av:Point>
                     <av:Size x:Key="ShapeSize">230,61</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">130,450.5 130,480.5 131,480.5 131,500.5</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">140,520.5 140,560</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="1Cv8 already running">
@@ -221,9 +290,9 @@
                   <FlowStep x:Name="__ReferenceID7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">0,500.5</av:Point>
+                        <av:Point x:Key="ShapeLocation">9,560</av:Point>
                         <av:Size x:Key="ShapeSize">262,60</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">262,530.5 350,530.5 350,606.5</av:PointCollection>
+                        <av:PointCollection x:Key="ConnectorLocation">271,590 350,590 350,606.5</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
@@ -247,16 +316,16 @@
                             <av:Point x:Key="ShapeLocation">310.5,606.5</av:Point>
                             <av:Size x:Key="ShapeSize">79,87</av:Size>
                             <av:PointCollection x:Key="FalseConnector">389.5,650 419.5,650 419.5,733.5 500,733.5 500,703.5</av:PointCollection>
-                            <av:PointCollection x:Key="TrueConnector">310.5,650 280.5,650 280.5,660 235,660</av:PointCollection>
+                            <av:PointCollection x:Key="TrueConnector">310.5,650 280.5,650 280.5,710 255,710</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <FlowDecision.True>
                           <FlowStep x:Name="__ReferenceID10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">5,629.5</av:Point>
+                                <av:Point x:Key="ShapeLocation">25,679.5</av:Point>
                                 <av:Size x:Key="ShapeSize">230,61</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">120,690.5 120,720.5 150,720.5 150,740</av:PointCollection>
+                                <av:PointCollection x:Key="ConnectorLocation">140,740.5 140,770</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="230,61" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="UPPD is running">
@@ -270,7 +339,7 @@
                               <FlowStep x:Name="__ReferenceID9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">19,740</av:Point>
+                                    <av:Point x:Key="ShapeLocation">9,770</av:Point>
                                     <av:Size x:Key="ShapeSize">262,60</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -292,10 +361,7 @@
                           </FlowStep>
                         </FlowDecision.True>
                         <FlowDecision.False>
-                          <FlowDecision x:Name="__ReferenceID12" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
-                            <FlowDecision.Condition>
-                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="out_UPP_Started" />
-                            </FlowDecision.Condition>
+                          <FlowDecision x:Name="__ReferenceID12" Condition="[out_UPP_Started]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -36,7 +36,9 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "Data/Output/1c8BuhBuf.xlsx"
+      ]
     },
     "fileInfoCollection": [
       {
