@@ -5,10 +5,11 @@
   "dependencies": {
     "CheckProcessStatus.Activities": "[1.0.1]",
     "UiPath.Excel.Activities": "[2.11.4]",
-    "UiPath.System.Activities": "[21.10.2]",
+    "UiPath.System.Activities": "[21.10.3]",
     "UiPath.Testing.Activities": "[1.4.4]",
     "UiPath.UIAutomation.Activities": "[21.11.0-preview]",
-    "UiPath.WebAPI.Activities": "[1.9.2]"
+    "UiPath.WebAPI.Activities": "[1.9.2]",
+    "UiPathTeam.TaskScheduler.Activities": "[1.1.0]"
   },
   "webServices": [],
   "entitiesStores": [],

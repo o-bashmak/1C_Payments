@@ -3,7 +3,7 @@
     <x:Property Name="in_listOfApps" Type="InArgument(scg:List(x:String))" />
     <x:Property Name="io_txtTitles" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1014,925</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>988,925</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
