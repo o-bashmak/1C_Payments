@@ -1,0 +1,4 @@
+﻿Initializing settings.../ create a log file / copy Buffer File - 1c8BuhBuf.xlsx
+09:56Initializing settings.../ create a log file / copy Buffer File - 1c8BuhBuf.xlsx
+09:58:18.4038148       Initializing settings.../ create a log file / copy Buffer File - 1c8BuhBuf.xlsx
+09-59-45 Initializing settings.../ create a log file / copy Buffer File - 1c8BuhBuf.xlsx
