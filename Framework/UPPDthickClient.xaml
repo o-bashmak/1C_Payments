@@ -5,8 +5,9 @@
     <x:Property Name="in_ResponsibleIs" Type="InArgument(x:String)" />
     <x:Property Name="in_Customer" Type="InArgument(x:String)" />
     <x:Property Name="in_CompanyFilter" Type="InArgument(x:String)" />
+    <x:Property Name="in_nameLogFile" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1014,2300</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1087,1182</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="45">
@@ -103,7 +104,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="494,2235" sap2010:WorkflowViewState.IdRef="Sequence_39">
+  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="476,1117" sap2010:WorkflowViewState.IdRef="Sequence_39">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="dateSet" />
     </Sequence.Variables>
@@ -112,19 +113,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="452,2143" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="434,1025" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="418,1854" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="242,736" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Esc" sap:VirtualizedContainerService.HintSize="376,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V1">
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Esc" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(esc)][u(hk)]" Version="V1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -132,7 +133,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Ctr+Shift+z (Hide message panel)" sap:VirtualizedContainerService.HintSize="376,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" Shortcuts="[d(hk)][d(ctrl)d(shift)]z[u(shift)u(ctrl)][u(hk)]" Version="V1">
+            <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Ctr+Shift+z (Hide message panel)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_13" Shortcuts="[d(hk)][d(ctrl)d(shift)]z[u(shift)u(ctrl)][u(hk)]" Version="V1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -140,7 +141,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="376,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
+            <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -189,10 +190,10 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
             </Sequence>
-            <Sequence DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="376,1177" sap2010:WorkflowViewState.IdRef="Sequence_43">
+            <Sequence DisplayName="Set filter" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_43">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -204,7 +205,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Left+Left" sap:VirtualizedContainerService.HintSize="204,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_10" Shortcuts="[d(hk)][k(left)][k(left)][u(hk)]" Version="V1">
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Left+Left" sap:VirtualizedContainerService.HintSize="204,53" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_10" Shortcuts="[d(hk)][k(left)][k(left)][u(hk)]" Version="V1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -212,7 +213,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NKeyboardShortcuts>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'История отборов'" sap:VirtualizedContainerService.HintSize="204,52.8" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                    <uix:NClick ClickType="Single" DisplayName="Click 'История отборов'" sap:VirtualizedContainerService.HintSize="204,53" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="280, 132, 29, 22" FriendlyName="'История отборов'" FullSelectorArgument="&lt;uia idx='10' role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia role='панель инструментов' /&gt;&lt;uia name='История отборов' role='кнопка' automationid='' check:fulltext='История отборов' /&gt;" Guid="ce51f8f4-8758-444e-a857-d28c5935e12b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAaCAYAAAA5WTUBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVEhL7ZNLTxNhFIZZ+GOMlxgX7FjpysSVOxIVSDMFi4mFaqWYBhQFFUQuqYgkQMulkKImEFscerMtYJFLoSgXC0Sa0sRGWhA0eHud+XTGtvORTGIiLjjJk0nOl3nPM2dmMjQaDfaajO3NJew1+xIC/69Eia4UKlUhdNy1rr5RxGjqEmlsNBD0+jIUa64QaFlyoEq0thkxvxDC+9g6hEpsbGDl3SoWQ0uYDgYxGZiGb2QUz1k7fMOjyC8okOTIhSqxHBpHdXUNWLsLcwuLvzWAwEwQo/4xPLNZ0dZuwv26Bng8XigZJbmHliWHXb8JPtTQ1AR2yIn1eIJIvF1ahnd4hDx9T68FE1NTYBjmrwR4qBJzC68RT8S5VzKPNqMJbo+PSIQja3A43bANshifnIL2qg7DwRACqwnc6J+FosUryZIDVcI/8RJfduJk8Fo0iofNLZiZfYOPW1uw9D1BV3cPyq9XkLPkOm9wSLLkQJVwe91weV3c046TcH7Y7bs13If6AQ3cH6EtKRUFLDY/HnTZCdm1VjHjcXsJsk8eSMH8qChljgBVwvHCgZ3PMYKwkbLyCqyGI6i5V4+iYi3ppdeZqqcpOckiuwnwUCWGnCwReDXmQzD4axu6a3pRovCimvQG7WOYCCwS+Dpd3ivJMreoCen9ZKgSzqRN8PB1WasTJZT5KtJLr1P6TkmWHKgSLGUTl9QaUSI3jyG99E2c0LZKsuRAlbCxVmxux0T48vp8UDD5yMlVwOVykd7XH6lkqZskWXKgSgxY+xHb+LOJaDRMhkbWIuTcPx/BzvfUTWx9AzIv1Euy5ECVMFu6EYrFJHSaO8h5VlEzlj8BKxz8VeBITpUkSw5Uic6eDpi6jVT480xVA44ztTimqMbRvDs4zA0/dO4WDp69KcmSA1XiX7MvIbAvIZAx0FeJvaUSPwHFONJPBta88AAAAABJRU5ErkJggg==" InformativeScreenshot="4c5c3ec36459482ed11f15dc05718ada.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector" />
                       </uix:NClick.Target>
@@ -223,7 +224,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Down" sap:VirtualizedContainerService.HintSize="204,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(down)][u(hk)]" Version="V1">
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Down" sap:VirtualizedContainerService.HintSize="204,53" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(down)][u(hk)]" Version="V1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -231,7 +232,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NKeyboardShortcuts>
-                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Enter" sap:VirtualizedContainerService.HintSize="204,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
+                    <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Enter" sap:VirtualizedContainerService.HintSize="204,53" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -239,7 +240,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NKeyboardShortcuts>
-                    <Sequence sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                    <Sequence sap:VirtualizedContainerService.HintSize="204,85" sap2010:WorkflowViewState.IdRef="Sequence_48">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -266,7 +267,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NMouseScroll Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="7" Version="V1">
+              <uix:NMouseScroll Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="7" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -274,7 +275,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NMouseScroll>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Контрагент'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Customer]" Version="V1">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Контрагент'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_Customer]" Version="V1">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="318, 95, 293, 22" FriendlyName="'поле'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia idx='26' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia automationid='' role='поле' /&gt;" Guid="0288fb54-c3f8-4a7d-a5e1-29be2420c0bd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASkAAAAaCAYAAADrAKo1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPHSURBVHhe7Z1LTxNhFIZdmLh0Cwkm6i8Q/4G/wLjxssCYqAtjDCQqEDExJgoGUlTERDaQoHhB7gjlVpFbsYotWFpaoBWh0gsIhYKILo5zDogdO5vCqMS+T/Jk8p3pR9jw5JsSyg76HiYIIdyuIlIQwm2tKlLh2XF60/uYGqtyydR0T64QQvi37Gy5Q4HJt9qR4kAZ6wzkcnTTt9UVAgD8/wyYq5Wf94guLsz5NOfxGJh2UWuDQRWqjUjxCYoDBQBIHDhSq1/DuhgKujXn8Rr45JQTVUyk+KiFExQAiYVEamVWF/0+m+Z8M3KPYiLF70EBABILjtTXL0FdnPKaNeebUTNSMgQAJBQcqZXlaV384H6pOd+MiBQAQOBIfVny6eKYs021nvT0kbWvgoYslRSafk+RhQmZ83XGb5c53/843qvaxyJSAABBIhWZ1EWXvUm1bnl+nS6fTKbsUynU3/GAglNWioS9FPLZqN9Uosz3yH3js2uqfSwiBQAQ1iKlnHB00DlYq1pPeXqosSKb0o/uliC9bCwgr3LaevXCIGue1z/KUk5c3ap9LCIFABDWIvVBFx22KtV6Yc5NXlc7NVRkUaZyYrqZnkq3rx6i3IyDygkqSQlUJnlG2uR10ftYRAoAIHCklhe9umh/VxkzC392yRvqZYUn5LHv/JFdci01HFfmJrn/+x4WkQIACGuR8uiifeBpzGxxfpT8H/uppiyDcs7up3OHd1LOmX1UXZpO0xNmuf/7HhaRAgAIHKmlhXFd5EhFrzlAgUkLmTvuy+npclqS6mpuL1YC9lpeF72PRaQAAMKfjFRg6g11NuZLkPhN8rqHl8jaV04NDzPX30xPIVP9LXld9D4WkQIACBypSHhUF+3vnqnWXc2FdDMjVU5OdeUXaWy4mWb8Vhp3GKleCVZmWjLdSD9AnS8KVPtYRAoAIHCkFufdYpexkKpKLyhxMcQ9Y4etlar1kOWJxKnpSQ5NuE30OWSXOV953fw0R+4PWR6r9rGIFABAkEjNucQyw3G6cnqvcj0W94x1cKSi1ltRM1L4A2MAEg+OVHjWIfa1FsljWG/r3bhnrNP262ttVWNdQWykuFz4qBYAEguO1Jzy+MUGfQPy2za+xjtjnYM1qvVW1IxUV1sJeUYt6986ACAR4EjN+m26OKJESmser16XSftD72b8fMQyIFQAJBAcqeCnAV0csddqzuPRMdhALfX52h8f/DNUHc1F8uiHf8QA4f9tU3We5vxfaazNo562YpoPjWw0iVVFCkIIt5uIFIRwGxumH4p2+0tLx05EAAAAAElFTkSuQmCC" InformativeScreenshot="df8d7eda1ae015470d2651e55e05200f.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8NewLocalFrameBaseWnd' title='Отбор и сортировка' /&gt;" SearchSteps="Selector, FuzzySelector">
                     <uix:TargetAnchorable.Anchors>
@@ -291,7 +292,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'Ответственный'" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+              <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'Ответственный'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                 <uix:NCheck.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="25, 184, 132, 22" FriendlyName="'Ответственный'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia name='Ответственный' role='флажок' automationid='' check:fulltext='Ответственный' /&gt;" Guid="4e839d49-203e-4181-8834-fad2497d77f8" InformativeScreenshot="0d0ef04e6d2f3f4580bc094690cfbcfb.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8NewLocalFrameBaseWnd' title='Отбор и сортировка' /&gt;" SearchSteps="Selector, FuzzySelector" />
                 </uix:NCheck.Target>
@@ -302,7 +303,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheck>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Организация'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_CompanyFilter]" Version="V1">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Организация'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_CompanyFilter]" Version="V1">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="318, 244, 293, 22" FriendlyName="'ЗАО &quot;Серволюкс'" FullSelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia idx='36' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Отбор' role='вкладка' /&gt;&lt;uia automationid='' role='поле' check:text='ЗАО &amp;quot;Серволюкс Технолоджис&amp;quot;' /&gt;" Guid="11308bbc-9dcc-40b3-a5b5-bc4b464c534f" ImageBase64="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" InformativeScreenshot="12265a87664faaa67cdde36562d3298a.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8NewLocalFrameBaseWnd' title='Отбор и сортировка' /&gt;" SearchSteps="FuzzySelector">
                     <uix:TargetAnchorable.Anchors>
@@ -319,7 +320,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Ctr+Enter" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_12" Shortcuts="[d(hk)][d(ctrl)][k(enter)][u(ctrl)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Ctr+Enter" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_12" Shortcuts="[d(hk)][d(ctrl)][k(enter)][u(ctrl)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -327,7 +328,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard End" sap:VirtualizedContainerService.HintSize="333.6,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_11" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard End" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_11" Shortcuts="[d(hk)][k(end)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -344,9 +345,9 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="375.2,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_18">
               <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="200,83" sap2010:WorkflowViewState.IdRef="Sequence_42">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -362,7 +363,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Computethedate workflow" sap:VirtualizedContainerService.HintSize="375.2,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Computethedate.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Computethedate workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Computethedate.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InOutArgument x:TypeArguments="s:DateTime" x:Key="dateSet">[dateSet]</InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
@@ -373,14 +374,22 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="375.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_44">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Дата расхода'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[dateSet.ToString(&quot;ddMMyyyy&quot;)]" Version="V1">
+              <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; fulfill Zayavka in 1c UPP&quot;]" UseDefaultEncoding="False">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Дата расхода'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[dateSet.ToString(&quot;ddMMyyyy&quot;)]" Version="V1">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="462, 188, 88, 19" FriendlyName="'30.11.2021'" FullSelectorArgument="&lt;uia helpText='Дата расхода' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia helpText='Дата расхода' role='поле' automationid='' check:text='30.11.2021' /&gt;" Guid="36c551f3-66f3-40c6-a571-ed7d2d7999ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAXCAYAAACGcCj3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVGhD7ZnLbcMwDIY1lwbSKD17hA7QWwFf21OWMLpDUKCnHli9aNF6RVIqnfgBzINR/ZtfBMdABfzegWtdsfDFdQq/fb7C+9sL16RKhNsmU8U4+vn+6i4WPggLXwwLX8xU4buSIITQJUHtvqlxfQlSfybpBzHHBkooSFaU+p6Qq4+/Hb5bzi2ttzzI6oUKx8xatQvfFQi5gT39Yw8nrQeQ2NePm5QQz+j6GEqHLfUJJlfR4wv3ZZdyS+v962rWALFwBF/HvXbhF+IBw+nvCgfMQb6oC6V+yrHpHW2CG3PP9SftWS3EwmkZ4t6YcLO7/EnHA6UDUp4VHnZsWy7d4chc4TWGhJvBzB/icCuF22x/GWnJpesDc4Wj9NyzqW7hjt6dhowLt8cl8h7lxusDc4XXeEI4GXDBNdxkJTu1kptdfzJXOErPPZtqFm6H0BO5Ici1sekuBRkQTn4vLpRyS+tP5gqv0SXcDHW5DydW8/fDucFahYf3Zufi7sDCS0cut7beMVf4o+oQzuSgwnuKhQ/CwhfDwhfzr8JvH/wfn5mVCOdaUyx8ad3hD65uxOYGtm/wAAAAAElFTkSuQmCC" InformativeScreenshot="157523b2cbb017ab42f5edc237547bbf.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector">
                     <uix:TargetAnchorable.Anchors>
@@ -397,7 +406,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <TryCatch DisplayName="Try Enter Sum" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch DisplayName="Try Enter Sum" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -474,7 +483,7 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DelayBefore="2" DisplayName="Alt+Ctr+F - perehod na druguyu vkladku" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" Shortcuts="[d(hk)][d(alt)d(ctrl)]f[u(ctrl)u(alt)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="Single" ContinueOnError="True" DelayBefore="2" DisplayName="Alt+Ctr+F - perehod na druguyu vkladku" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" Shortcuts="[d(hk)][d(alt)d(ctrl)]f[u(ctrl)u(alt)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -482,7 +491,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
-              <uix:NClick ClickType="Single" DisplayName="Click 'Оплата по'" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+              <uix:NClick ClickType="Single" DisplayName="Click 'Оплата по'" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="507, 411, 787, 166" FriendlyName="'Оплата по'" FullSelectorArgument="&lt;uia name='Описание' role='вкладка' /&gt;&lt;uia role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='Описание' role='вкладка' /&gt;&lt;uia role='поле' automationid='' check:text='Оплата по лицевому счету 207319776969 за услуги связи за апрель 2020 согласно счету-акту №' /&gt;" Guid="e6c3672c-823c-4b75-ae0d-c3e2abbde02a" ImageBase64="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ALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALbgcAEAAABgCw4XAAAAALYwDxf//O9/xAQuLi4uLi4uLi4uLq7V63//69/7wwUXFxcXFxcXFxcXF9cjF4cLLi4uLi4uLi4uLq4N178+/h8Y3xjiKUf7MwAAAABJRU5ErkJggg==" InformativeScreenshot="09cf129816056837751a11980869008d.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /*' /&gt;" SearchSteps="Selector, FuzzySelector" />
                 </uix:NClick.Target>
@@ -493,7 +502,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenShortcuts="1.5" DisplayName="Keyboard Ctr+A" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(del)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="Single" DelayBetweenShortcuts="1.5" DisplayName="Keyboard Ctr+A" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(del)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -501,7 +510,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NKeyboardShortcuts>
-              <TryCatch DisplayName="Try Enter Description" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+              <TryCatch DisplayName="Try Enter Description" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -561,7 +570,7 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type ResponsibleIs" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_ResponsibleIs]" Version="V1">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type ResponsibleIs" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_ResponsibleIs]" Version="V1">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="1017, 790, 283, 23" FriendlyName="'Швайков Евгений'" FullSelectorArgument="&lt;uia helpText='По умолчанию заполняется значением, &amp;#xD;&amp;#xA;введенным для пользователя,*' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia helpText='По умолчанию заполняется значением, &amp;#xD;&amp;#xA;введенным для пользователя,*' role='поле' automationid='' check:text='Швайков Евгений Сергеевич' /&gt;" Guid="b5f9a9ac-5098-4137-8883-e488c629d08c" ImageBase64="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" InformativeScreenshot="194de9f2db027b58eef22fa1c6946c6f.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /*' /&gt;" SearchSteps="Selector, FuzzySelector">
                     <uix:TargetAnchorable.Anchors>
@@ -578,7 +587,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Комментарий'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_description]" Version="V1">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Комментарий'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Text="[in_description]" Version="V1">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable DesignTimeRectangle="462, 591, 225, 19" FriendlyName="'Оплата по'" FullSelectorArgument="&lt;uia helpText='Комментарий к документу' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia helpText='Комментарий к документу' role='поле' automationid='' check:text='Оплата по лицевому счету 207319776969 за услуги связи за апрель 2020 согласно счету-акту №' /&gt;" Guid="d53da23f-15e3-49f3-abd4-eb89ce848232" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOUAAAAXCAYAAAD0k4gEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASWSURBVHhe7VyxbhsxDO0/5i+aj8gS9A8y1ujubt08tEVdZMmYxYvnrPHc4SpSovQoibo7tIndhgQecuJRJI/ik+5coO+mX8+Tw+G4HDgpHY4LQybl/fdP05fPHxwOxxlA/GtISTdcXFzOI8w/J6WLy+XILCmv3v9wOByvABEnpcNxIRBZQMqH6XZ/mqbjadrtn6ZD0B32j41Dx9sG90iSw/ah0p9U31xvi22Rp+lW+Qn9dlfFuTlOu2Qnup695f/jIO7VXextEuxvM5+19gsgMktKfsAQ9DpPfpg2x2l1QMd/jNCg0/6YegT6I5DocET9adrcpDkIsqPGJj9if/MIBIw+owApTfsK4t/U01zp6RBrn65N/2vtl0FklpTdQqpiOxwatJHzaclkxVNEGlmDTpeWrD0S60bPcWC83D/okUwA0/9ae7AZQWSWlH3yleLIEZ4l7xSBuEnFIvrwQEUvScedR0naOVtbjVH8neyux8EOmkxY0lx8ZipsT682piqWNIDODfI3cmN7taOnujTxjVOHdud8olC82CCY5zjn/jrMxlUgm0i+XpPimIE51frmpCl9x2NFjnhirfKf9LzGqu4Jhv+19soG6449QXOT/Dkp8T4WwLpG1HrLbnDPmh8bIxbELCL6hGuloyLU+speNWrPD4GKnnKwcjsEcuzAFzcxfcc3cYh84DuB/UoT8OtTtM95LMi5N56Li+DnSTacPzRlPRZdvdmyD+q9uqFrUgbkbziqXbhe4r/Wc16hzkKW7jci+F9rL/cIuPaaxH/zpMT7uJiDa2q8LNb8OdsEK76lx7lK38xNp8LdvM/mtBYypFGUzslV+6G/Ql7SU43hfm6kYNM2bOUXkBt5Qc48B+xoPBdXwM1azUP7ehxJrklWUE7comtJiaDX42X+tZ7y6n4TZ/sI8b/WvtbHtW1rLjJLSrWjolNZXGwEXEzjmndv2SnQpjMe2iZY80d+M1Bfzb2VBlrgs33NimjsZzay+Dcu8iHUvY7P16EZNmEHbtYkz2/1efcmkViD5lYxZTyIS+BGrePD2wGh/qZsSarRJbGZd0sOy3+jrzab/jzwv9Ze6QFU1/Q81Osis6SkgPrVTwdrFk/GxjUVVRb2equPbzVnzjbBih9zjIVqn6G1x2t8ZVV60VV6jiWLMrJPC2Dllu2D7S7o5Lr4ibXv1YGg86AGrki0IOfueCYu2/fI0uSO+dTjUotiT3Uq9xtSMumjf37DUDm0/m198ss6iGv6X2tfoNYE6kb+RGZJSUF5pw0P0vt3Smsx6QeDbAd6Ipe8OtFpMCLl0DbBik/X5YeMdh7BypFi5mao9I3QfPyBJbwWSdG1fXl9tXJTzyLAZwro78oJxg895T7Wp59zY5cwiksnYC1iG0/pMJd00DcUf7OFMSP1GkvIv4mXyAA6ZY8E7vof6AOJcq9Bnqb/tfYCXHuw4UMnyQJSVk4dBbwzdhb4xWDt/i+Nc8V9WxBxUv5D4JPdOiVfEOeK+9YgMktKFxeX1xUnpYvLhUmXlPff/H8ecDjOhZ9fNy0pHQ7HZcBJ6XBcFJ6n30Ct+zSWHNmOAAAAAElFTkSuQmCC" InformativeScreenshot="be050e6e1d0fcddd0d2e5f7817e414e9.png" ScopeSelectorArgument="&lt;wnd app='1cv8.exe' cls='V8TopLevelFrame' title='УППД /Шарипкин Олег Игоревич/' /&gt;" SearchSteps="Selector, FuzzySelector">
                     <uix:TargetAnchorable.Anchors>
