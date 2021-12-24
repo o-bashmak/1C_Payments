@@ -24,3 +24,29 @@
 10:41:53 1C Buh is closed
 10:42:36 fulfill Zayavka in 1c UPP
 10:43:24 The end of process
+12:19:47 Initializing settings.../ create a log file / copy Buffer File - 1c8BuhBuf.xlsx
+12:19:49 run 1C Buh
+12:19:49 delay 5 sec
+12:19:54 delay 5 sec
+12:19:59 1C Buh is started
+12:19:59 run 1C UPP
+12:19:59 delay 7 sec
+12:20:06 delay 7 sec
+12:20:13 delay 7 sec
+12:20:20 delay 7 sec
+12:20:27 delay 7 sec
+12:20:34 1C UPP is started
+12:20:36 start process
+12:20:36 exe file 1c Buh is 1cv8c.exe
+12:20:38 run 1C Buh
+12:20:38 delay 5 sec
+12:20:43 delay 5 sec
+12:20:48 1C Buh is started
+12:20:48 run 1C UPP
+12:20:48 delay 7 sec
+12:20:56 delay 7 sec
+12:21:03 delay 7 sec
+12:21:10 delay 7 sec
+12:21:17 delay 7 sec
+12:21:24 1C UPP is started
+12:21:24 The end of process
