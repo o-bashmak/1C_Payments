@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1281,1266</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1055,1366</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="45">
@@ -58,7 +58,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="74">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -151,19 +151,19 @@
             <av:PointCollection x:Key="ConnectorLocation">470,313 470,417</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="1Cv8 Buh_RB" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="1Cv8 Buh_RB" sap:VirtualizedContainerService.HintSize="644,2733" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республики Беларусь: СООО &quot;" sap:VirtualizedContainerService.HintSize="554,3754" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="fac6e06a-c2d4-4985-b07b-2e415326a823" Timeout="90" Version="V1" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республики Беларусь: СООО &quot;" sap:VirtualizedContainerService.HintSize="602,2641" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="fac6e06a-c2d4-4985-b07b-2e415326a823" Timeout="90" Version="V1" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,3465" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,2352" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="findOuttxt" />
                   </Sequence.Variables>
@@ -173,10 +173,10 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Run Akt" sap:VirtualizedContainerService.HintSize="478,711" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Run Akt" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -256,7 +256,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AppendLine>
                   </Sequence>
-                  <Sequence DisplayName="FullFill a form Akt" sap:VirtualizedContainerService.HintSize="478,1016" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="FullFill a form Akt" sap:VirtualizedContainerService.HintSize="526,1744" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="Contract" />
                     </Sequence.Variables>
@@ -266,7 +266,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap2010:Annotation.AnnotationText="Вычисляем последний день 2 месяца назад" DisplayName="DateAkt" sap:VirtualizedContainerService.HintSize="262,103" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign sap2010:Annotation.AnnotationText="Вычисляем последний день 2 месяца назад" DisplayName="DateAkt" sap:VirtualizedContainerService.HintSize="484,103" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[dateAkt]</OutArgument>
                       </Assign.To>
@@ -279,7 +279,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Company&quot;).ToString]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Company" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Company&quot;).ToString]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="368, 183, 873, 25" FriendlyName="'поле со'" FullSelectorArgument="&lt;uia name='Организация:' role='поле со списком' /&gt;" FuzzySelectorArgument="&lt;uia name='Организация:' role='поле со списком' automationid='' /&gt;" Guid="baa98280-bd22-4649-91c6-378de046ef35" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA20AAAAdCAYAAAA5OISWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG4SURBVHhe7drLbcJAGIXRNEgBiBagJxZeuDI/KIHNJINsi4cTm4jH4DlHuvoTR3KS5SfxFQAAAEiWaAMAAEjYRbTVdR2Kogj7/d7MzMzMzMxevNhjscvODdHWNE0oyzJUVdU9AQAAWJYYRo/2yHe2bXvTZUO0jRUdAADAkqQebVH/CcjeEG3P+OMBAABS8gnRFp2/U7QBAADZEG0AAAAJE20AAAAJE20AAAAJE20AAAAJe2e0rVar0Y0RbQAAQJbeHW3XRBsAAMAZ0QYAAJCwqe7Z7XankOq33W67n/zur3f27+m/vjb2LBJtAABAlqa653g8hvV6fYqpeOP3U6airSfaAAAAJszpnsPhEDabzenOcU+0jW2MaAMAALL0jO6ZG233EG0AAECWUoi2OSEn2gAAgCy9I9rGNkW0AQAAWXp1tP2XaAMAALIk2gAAABIm2gAAABIm2gAAABL20dFWFEWo6/rnSffIdV3XdV3XdV13YfcToi12WeyzXvcfhNC2bSjLMlRV1T0BAABYltSjrWmamy4boi3qiy7+UjMzMzMzM3vthk9AnrmINgAAANIi2gAAAJIVwjcXl2RIWkffuwAAAABJRU5ErkJggg==" InformativeScreenshot="5ce9ff1ec8e6d8c5c733b482f6190c17.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector" />
                       </uix:NTypeInto.Target>
@@ -290,7 +290,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Customer" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Customer&quot;).ToString]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Customer" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Customer&quot;).ToString]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="368, 217, 873, 25" FriendlyName="'поле со'" FullSelectorArgument="&lt;uia name='Контрагент:' role='поле со списком' /&gt;" FuzzySelectorArgument="&lt;uia name='Контрагент:' role='поле со списком' automationid='' /&gt;" Guid="285512f4-780f-4674-bde7-a59f887605ca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA20AAAAdCAYAAAA5OISWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG4SURBVHhe7drLbcJAGIXRNEgBiBagJxZeuDI/KIHNJINsi4cTm4jH4DlHuvoTR3KS5SfxFQAAAEiWaAMAAEjYRbTVdR2Kogj7/d7MzMzMzMxevNhjscvODdHWNE0oyzJUVdU9AQAAWJYYRo/2yHe2bXvTZUO0jRUdAADAkqQebVH/CcjeEG3P+OMBAABS8gnRFp2/U7QBAADZEG0AAAAJE20AAAAJE20AAAAJE20AAAAJe2e0rVar0Y0RbQAAQJbeHW3XRBsAAMAZ0QYAAJCwqe7Z7XankOq33W67n/zur3f27+m/vjb2LBJtAABAlqa653g8hvV6fYqpeOP3U6airSfaAAAAJszpnsPhEDabzenOcU+0jW2MaAMAALL0jO6ZG233EG0AAECWUoi2OSEn2gAAgCy9I9rGNkW0AQAAWXp1tP2XaAMAALIk2gAAABIm2gAAABIm2gAAABL20dFWFEWo6/rnSffIdV3XdV3XdV13YfcToi12WeyzXvcfhNC2bSjLMlRV1T0BAABYltSjrWmamy4boi3qiy7+UjMzMzMzM3vthk9AnrmINgAAANIi2gAAAJIVwjcXl2RIWkffuwAAAABJRU5ErkJggg==" InformativeScreenshot="5fa86a6ad964e5c1fc1db87d6d09531d.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector" />
                       </uix:NTypeInto.Target>
@@ -301,7 +301,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Data1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[dateAkt]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Data1" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[dateAkt]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1331, 149, 120, 25" FriendlyName="'. .'" FullSelectorArgument="&lt;uia name='За период с:' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='За период с:' role='поле' automationid='' check:text='.  .' /&gt;" Guid="9ab02773-acae-4a87-95a5-a211f3e09759" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAdCAYAAABotghBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEdSURBVGhD7drfDYIwEMdxdnIOhnAHVnAPHohhERfxgT9TnLlIG9AeF02Blvt9kksFiTx8iQlJCwJTENyYRfC+76lpGqrrGnOC4ZbcdM4HH4aB2ralruumM3AEDhXLOI5fTX3w0NMA+4sZnLl/bccHj30j+M8WHea/ieCJQXBjENwYBDdG61CW5fTp7fM4BMETJnWoqsrH5dWNO+bvJQieMKnDPLI0EgRPGIIbsxZ8DYJnSguurSEInjAtuATBM6UF19YQBE+YFlyyefDH7ULX+3M60v16vVVSB/ceLg3ewzO1RQcETxiCG4PgxiC4MbsF93vaiukU1kPW2MHFPW2hHY6wv5jBQzuRfXDmnga+KSb/Ce1EXgSH80NwU4heP/3YrdbfkYoAAAAASUVORK5CYII=" InformativeScreenshot="f3090396f7d378bae1168fc182978975.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
@@ -318,7 +318,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Data2" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[dateAkt]" Version="V1">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Data2" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[dateAkt]" Version="V1">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1491, 149, 120, 25" FriendlyName="'. .'" FullSelectorArgument="&lt;uia name='по:' role='поле' /&gt;" FuzzySelectorArgument="&lt;uia name='по:' role='поле' automationid='' check:text='.  .' /&gt;" Guid="138fd5e9-6f2d-4f0f-b988-22f60264a02b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAdCAYAAABotghBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEdSURBVGhD7drfDYIwEMdxdnIOhnAHVnAPHohhERfxgT9TnLlIG9AeF02Blvt9kksFiTx8iQlJCwJTENyYRfC+76lpGqrrGnOC4ZbcdM4HH4aB2ralruumM3AEDhXLOI5fTX3w0NMA+4sZnLl/bccHj30j+M8WHea/ieCJQXBjENwYBDdG61CW5fTp7fM4BMETJnWoqsrH5dWNO+bvJQieMKnDPLI0EgRPGIIbsxZ8DYJnSguurSEInjAtuATBM6UF19YQBE+YFlyyefDH7ULX+3M60v16vVVSB/ceLg3ewzO1RQcETxiCG4PgxiC4MbsF93vaiukU1kPW2MHFPW2hHY6wv5jBQzuRfXDmnga+KSb/Ce1EXgSH80NwU4heP/3YrdbfkYoAAAAASUVORK5CYII=" InformativeScreenshot="0b8f5225241b8c8a7fb49e1df0373a98.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
@@ -335,7 +335,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NGetText DisplayName="Get Text 'Договор №'" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                    <uix:NGetText DisplayName="Get Text 'Договор №'" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1331, 217, 340, 25" FriendlyName="'Договор №'" FullSelectorArgument="&lt;uia name='Договор:' role='поле со списком' /&gt;" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;uia name='Договор:' role='поле со списком' automationid='' /&gt;" Guid="ee7cc2a2-fb17-414f-ae2d-3a46c73ba4d0" ImageBase64="" InformativeScreenshot="c1afd6745eb1cffb988a7832b6320157.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector" />
                       </uix:NGetText.Target>
@@ -349,15 +349,15 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <If Condition="[Contract.Equals(in_Config(&quot;Contract&quot;).ToString)]" DisplayName="If chech Num contract" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If Condition="[Contract.Equals(in_Config(&quot;Contract&quot;).ToString)]" DisplayName="If chech Num contract" sap:VirtualizedContainerService.HintSize="484,375" sap2010:WorkflowViewState.IdRef="If_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Else>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Договор'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Contract&quot;).ToString]" Version="V1">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Договор'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Text="[in_Config(&quot;Contract&quot;).ToString+&quot;[k(enter)]&quot;]" Version="V1">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="1331, 217, 340, 25" FriendlyName="'поле со списком Договор'" FullSelectorArgument="&lt;uia name='Договор:' role='поле со списком' /&gt;" FuzzySelectorArgument="&lt;uia name='Договор:' role='поле со списком' automationid='' /&gt;" Guid="ea9c9b08-f46f-4984-9c21-d30b5efed9be" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVgAAAAdCAYAAADvjnQrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHESURBVHhe7d1biuJAGIDR2aALEMENqHvywQc3oEvRHXjDFfhSQyVGbKc0KlVtT+cc+MlFKPP0YYKQPwGAIgQWoJAvgd1ut2E2m4XpdGqMMeaFie2MDb12Cexutwvz+TxsNpvzGYD3xODk9tPX3O/3/zT0EthUfQHe0cXARs1TgMYlsCUuHuimrgY2ul5TYIHsBLYmsEB2AlsTWCA7ga0JLJCdwNYEFsjutwW21+slJ0VggaI+EcPj8Xjeq90ep7wS2FsCC3zEdwf2cDiE0WgU1ut1dRy38Tief0Rggf9OW08mk0kVqGbG4/H5k/va1myiulwuq+1qtTp/ct+jNZtra/Zvpc5FAgsU1daT0+kU+v1+Fam4jcdtnmnUYrEIw+Gw2j6jLbANgQV+jGd6Em/fB4NB6218o23N5hdsjOv144JHXglsalIEFiiqRE8erVniGey9gLYRWKCo7w5slPtfBKnAPhNdgQWK+kRg39EW2NS0EVigqN8Q2HcJLFCUwNYEFshOYGsCC2QnsDWBBbIT2NolsN7JBeTS1cDefSdX6o2IAO/oYmBTb+a+BDZq6hu/1BhjzPOTegrwJbAA5COwAEWE8BeSmW01ksCOsAAAAABJRU5ErkJggg==" InformativeScreenshot="1f78f61a4f6b067f53b8cb47cb0cfea7.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector">
                               <uix:TargetAnchorable.Anchors>
@@ -369,14 +369,14 @@
                           </uix:NTypeInto.Target>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NTypeInto>
                       </If.Else>
                     </If>
-                    <uix:NClick ClickType="Single" DisplayName="Click 'Добавить'" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Добавить'" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="385, 325, 120, 26" FriendlyName="'Заполнить'" FullSelectorArgument="&lt;uia name='По данным организации' role='вкладка' /&gt;&lt;uia role='панель инструментов' /&gt;&lt;uia name='Заполнить' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='По данным организации' role='вкладка' /&gt;&lt;uia role='панель инструментов' /&gt;&lt;uia name='Заполнить' role='кнопка' automationid='' check:fulltext='Заполнить' /&gt;" Guid="e8d0c6a5-acd1-491b-98eb-840605cd3d79" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAeCAYAAADuInrvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVGhD7ZnNiioxEIXvC/o06oP4s9SlbhT/n0FFXSm4cCGi4kJEEVFElFxOmAo1mXTPhTu2TroOHEylUtWZfN0zTPtHiWIlAR4zGeCXy0X1ej3V6XRUq9USe2CwBFOwJRng3W5XzWYz9Xg8PmZEv11gCaZgSzLA2+22wPZQYAq2JAMcvwJEfoqzFeAxkACPmQR4zBQp8M1moxKJxCeLolVkwAk2Pkmj0UigR6xIn3CX7JtA9Fy9FDiuw59weuLJ+Xxez7v+FMAkO89vID5PhqiGxGM7x/eZTqf1mIzYXv/OeglwOkDYhgPoEMFH3j5QO3bVkXiO14X1tHMEmRRW++56CXCSDccWcjjMsAN2HTbV0fh/gOMs6AYlhdVGrWq1qq/NXS6XP7JfFQgcr+GiMJ6e4XCox+v1+svmMUfzVMNj1KIH5WDeE+vs/nxs216HXmHX5zF3Lpcz+We7UqmY65ZKJecaciDw+/0eiVOplBoMBmq1WukN45NyFFOO5nls52DeB2P0t9f+S89Go/Fpb661rhimn4vPPdMADbty3IHAb7fbj7rf7+tDWS6XZq5er+s5nqdcNps162Ges2OMUY+x3Yd6YMzrwnrSGHv4bq0rhgGc9vRODgR+vV5/3IvFQh8MN88nk0kzX6vVdIzvcKnO7mPHZMS8n6surCeNce3v1vKYO5PJmPw7ORA4vigX++dA4OfzWeyhA4GfTiexhw4EfjwexR46EPjhcBB7aCdw/Lu02+3Ufr8Xe2QwBVuSAd5sNvVLg+12qxeJf7/BEkzBlmSAT6dT/bquWCyqQqEg9sBgCaZgSzLA8UZmPp+ryWSixuOx2AODJZiCLckAF8VDAjxWUuov7ySBMWAvcBMAAAAASUVORK5CYII=" InformativeScreenshot="75c1e468904ae9feeb085de83afd7eef.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector, Image">
                           <uix:TargetAnchorable.Anchors>
@@ -388,12 +388,23 @@
                       </uix:NClick.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <uix:NClick ClickType="Single" DelayAfter="8" DisplayName="Click 'Добавить Заполнить Еще'" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Заполнить'" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="385, 325, 120, 26" FriendlyName="'Заполнить'" FullSelectorArgument="&lt;uia omit:name='По данным организации' role='вкладка' /&gt;&lt;uia role='панель инструментов' /&gt;&lt;uia name='Заполнить' role='кнопка' /&gt;" FuzzySelectorArgument="&lt;uia name='По данным организации' role='вкладка' /&gt;&lt;uia role='панель инструментов' /&gt;&lt;uia name='Заполнить' role='кнопка' automationid='' check:fulltext='Заполнить' /&gt;" Guid="842712ed-0b1d-481b-8433-5ac7fda2aed6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAeCAYAAADuInrvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAInSURBVGhD7ZndasJAEEZFEVFEfDHfUC/1RkH8eQYFLxW88MIHEFFEFBFly5e6w3SaTWMx0STzwWFnd0YqOWwLac5oMhUVnrGQ8PP5bKbTqRmPx2Y4HCopAC7hFG5tSPhkMjGr1crc7/fHiSbpgUs4hVsbEj4ajVR2CgOncGtDwvErgCeX+27pmuwV4W7p9MchG9YkP38K1yQ/esMznNhveKPR+IEm+rzthvsJVunxJvYbLqPCo8/H/A133XgLDz//qy/De7wvZ8P0sErseRLylhvOHxSPPOP7//YQ1+wzc0GziNx/Uj76hvPwftADDuohrtln5oJmEbmPK71ej76fpdPpPLq/4xSO13BxgC8o95yguTA9uZe1RM7JVfb5nsN7UdPtdunnttvtX/18Pk+1U/jtdvMoFApURwG+pF/9qp7ch/0c6rCzYfZRA9HAr8dxCr9ery8HDyHoTNauntwH9eQ+7OdQh50Ns38nxWKRaqfwy+XiUSqVqH4FeBAcV9/W/NzWrr1Fnsk5v/qZnmvP4b1Pwikc/yhX0kG5XKbaKfx0OnlUKhWqleTjFH48HpWUUK1WqXYKPxwOHrVajWol+TiF7/d7ol6v65qCFfgK7/f7Zrvdmt1up6QIOIVbGxI+GAzMbDYzm83GG1KSD1zCKdzakPDlcum9rmu1WqbZbCopAC7hFG5tSDjeyKzXa7NYLMx8PldSAFzCKdzakHBNNqLCMxVjvgD5fjj/YakIEQAAAABJRU5ErkJggg==" InformativeScreenshot="db709720a62f27c5e898fb6168e38c12.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector" />
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NClick ClickType="Single" DelayAfter="8" DisplayName="Click 'Добавить Заполнить Еще'" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="2, 2, 365, 29" FriendlyName="'Заполнить по'" FullSelectorArgument="&lt;uia name='Заполнить по данным бухгалтерского учета' role='элемент меню' /&gt;" FuzzySelectorArgument="&lt;uia name='Заполнить по данным бухгалтерского учета' role='элемент меню' automationid='' check:fulltext='Заполнить по данным бухгалтерского учета' /&gt;" Guid="46b1aecc-97ca-4cef-8a44-0c6f4eee1547" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXEAAAAhCAYAAAAvfpvnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUpSURBVHhe7Zk9ctwwDIVzkzSeceXCjTsfJb1v4DO42TN4xo2PkD4pc4icI43CR5FcEASh3Z0UgfQw842XIgD+QU/a9Zf39/eFEEJITLKI02g0Gi2edSL+59dXQgghQYBRxAkhJCgwijghhAQFRhEnhJCgwCjihBASFBhFnBBCggKjiBNCSFBgFHFCCAkKjCJOCCFBgcUW8e8Py8vz8/LceFx+WH7kgNwvb6wNsnNgcUU8C/jT8vldXPt45M1KEnfL57fn5e3D6iNkP8Biv4kP4O1LCTs5IKkOvj0sv80+QvYDbFci/vv01L+J5zdz8ZX69X69PvwMA0Rc1y8fCvorOihxOUbnsPvO81zfGLt8EB+dy6Oba0XPo17fesBt/ATh7qces7Sv6Zv6pLGUKP94NeZXQUya2+oDzuvO1+q8C/k80rX1XMQelbFfTnfneTTK2LM9mdbK5MyHGLk2xKR5ncRYcg1qbu0bSL5e85TcNa6LGdfcxqnxM3+Ft7/9fBK6ba7f2a/p3h8H2C5EfL35cJCyuNaCaAWdD7z0u8VkxU36ZJyXU+dPN+TU12p7uLHeWgwQW2+QYQ437uc1fVOftF8QMXW207XkmCK+aMt1D2P2P71IEcLnlsOcq7Mnuk/Hb8wj13QT9ypk1X/Nvc7NGUd8bkIq4vt5jzGrL3D8Nd66dF/X9tavfYE1J1kjxwC2qzdxt7jyod8gOjJOF44XN+lDcb6dHF+r7XHhuKu/XIsB/KcirrlxP70+x+cz7ZsU5ZfXhBULhrxy3b1YjL6lP+X3RcTiwlq5pO3NOdFEGTUv5ylpOWUueb36iv6hz7qm8nU4+6vzeH2bc9Z4c9ovsH2JuFlAeIOpTApVtoebQuZEoXgFKscCsg+fUzxye+PPcs2+Knq53LUYwL+Oo/O2a3Jecj/ldVBir+zLc5Nj18/4m9eCNaRxP4SPRsZn+nXLt1J8bg+HCvahzqVeG3LK63INVUicWpm2ZR6Zyzi3crY/sZbujAUtZ81T8OpCz2vLX/oV5vt77f0j5m3Na4hR6zwAsP2KeD5geajiSa0LQraHYhFxm0Xo58TbpHmjbLW9m8aLHfLItYx0N5yZ9x/sp9eXxTO1TR/sQRoP4g2B0LEdmJvs0+uu/SVntx/FVz8krPHyNZ23tvF5UiuXtDvG829COQisoOXcmIuctzUPz1/6df3wN/Y3n7EU3pLXXX9C9+f2bO+PAyyuiOdi6A8tF3Y96CoIpW/9J1fxNwuitlXBd3lUocg4L2f+nATytdxsnq/VvlXE3bVo6o1X2jrvrft5S9/EZz3fsh4dq5C/Z+c4JXTozz9rGW+YZpw1nrcnXq1YbX3GXf/ad16DPFd1xjnOOJcun1MXw7yA4z/B3l+FsUZ7/Ubb3fvjAIv9Jp4PFodXkYVVCr/0vZzuz0WyVSBd3loYNd8kzstZ8l1coMX/vK5E/ZlDc1WuSZFb4zVqrhv3c7NPjmXkk583xUayCs+a11h3ziXOJJGFoBOdkmP65j/bk41asdqZ2ZzXfPl3+jaW+Ako56pxYk1qjPGhZIxlzqteN/xnGPs7MIzlnNng69Rj89k/sNgiTv4N7o1rXN8DodZWRDySQO25dv4jYBRxckgRz2+ls283/x3xRDzW/sYFRhEnxyI/mPAVPNLDKZCIh9zfuMAo4oQQEhQYRZwQQoICo4gTQkhQYBRxQggJCowiTgghQYFRxAkhJCgwijghhAQF1ok4jUaj0WJZE3FCCCEReV/+AmS7zBw8NsF+AAAAAElFTkSuQmCC" InformativeScreenshot="e4af16923c61f13907c264558b1111ba.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8CommandPanelPopup' idx='*' /&gt;&quot;, app)]" SearchSteps="Selector, FuzzySelector, Image">
                           <uix:TargetAnchorable.Anchors>
@@ -405,12 +416,12 @@
                       </uix:NClick.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; An Act is fullfilled&quot;]" UseDefaultEncoding="False">
+                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; An Act is fullfilled&quot;]" UseDefaultEncoding="False">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -419,21 +430,21 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AppendLine>
                   </Sequence>
-                  <Sequence DisplayName="Get data for table" sap:VirtualizedContainerService.HintSize="478,1261" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Get data for table" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matchContr" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NGetText DisplayName="Get Text 'Поступление товаров'" sap:VirtualizedContainerService.HintSize="436,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                    <uix:NGetText DisplayName="Get Text 'Поступление товаров'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="895, 394, 308, 29" FriendlyName="'Приход (Счёт-акт'" FullSelectorArgument="&lt;uia name='По данным организации (1)' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia name='Приход (Счёт-акт № 9017209964 от 30.11.2021) Представление' /&gt;" FuzzySelectorArgument="&lt;uia name='По данным*' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia role='' automationid='' /&gt;" Guid="c9638948-04a9-4964-b4e9-a34458fb6045" ImageBase64="" InformativeScreenshot="ebd9e0e2e895014ed60755f33cc6ef24.png" ScopeSelectorArgument="&lt;wnd app='1cv8c.exe' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;" SearchSteps="FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="707, 394, 188, 29" FriendlyName="'Поступление товаров'" FullSelectorArgument="&lt;uia name='По данным*' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia name='Поступление*' /&gt;" FuzzySelectorArgument="&lt;uia name='По данным организации (1)' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia name='Поступление*' role='' automationid='' check:fulltext='Поступление*' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAAAhCAYAAACPxKQgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHxSURBVHhe7ZdRasNADERzp9z/BvnKIQI5hVsFBGKQVlrXbjbRPBC2NKNtm3owuWy/3G43uRDSAvu8X6SRut/vryuL1aH0eX+9AQjpCgNAWsMAkNYwAKQ1DABpDQNAWsMAkNYwAKQ1DABpzVQArtdrWIR8ItMB8GAAyKfCAJDWnBIA6bUQT7Mzq+lVsb31almqmmXUV7xaEdaDXm8m2DlqQqRp72mCzlGzc9QQbzci80qv9Z8cHgD0VDVhpt/rrfqE0RnVPY/MXz070yJvtmfB3oJ7Va+Au5bROUfz1gAgnq6z0bnCqI/uhT2a3Ff3PDL/3rOre3s1BPdGXkF19GV7Z9IyAFhKpnlXQb22RqA+6vU8LSTS0Tuj2RqhOl4jIl+2dybt3wCW7IzoHNzLQP+oX0lDRBvtIqqjL9s7k6W/AyjefOas6F6Y0SLvaM8j81fPxvusV+y9UNUQ0Ua7Hp4HZ5VzjuLwAAjSayGZ5lHxai/XSFPUU/EpFa9WhueJ9u0cNcHOrW5ndq7oHDU7Rw3xdjMij/687Mysn2UqAO/ir39kR1b9zFb7vRiAL4UBqLF0AOTD4sO/j9U+t1X/lx/xBiDkLBgA0hoGgLSGASCtYQBIaxgA0prL4/HYns/nq+Sexfr2ss873wCkNQwAacy2/QAwApn5A2pXXwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -449,7 +460,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,326" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
@@ -479,8 +490,14 @@
                           </uix:NGetText>
                         </Sequence>
                       </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:Matches BuilderPattern="(\d{10})" sap:VirtualizedContainerService.HintSize="436,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[findOuttxt]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Цифра&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;10&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Точно&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d{10})" RegexOption="IgnoreCase, Compiled, IgnorePatternWhitespace" Result="[matchContr]">
+                    <ui:Matches BuilderPattern="(\d{10})" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[findOuttxt]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Цифра&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;10&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Точно&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d{10})" RegexOption="IgnoreCase, Compiled, IgnorePatternWhitespace" Result="[matchContr]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -488,7 +505,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:Matches>
-                    <ui:WriteCell Cell="B2" DisplayName="Write Num contract" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Buffer" Text="[matchContr(0).toString]" WorkbookPath="Data\Output\1c8BuhBuf.xlsx">
+                    <ui:WriteCell Cell="B2" DisplayName="Write Num contract" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Buffer" Text="[matchContr(0).toString]" WorkbookPath="Data\Output\1c8BuhBuf.xlsx">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -496,7 +513,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteCell>
-                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; contract is &quot; + matchContr(0).toString]" UseDefaultEncoding="False">
+                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; contract is &quot; + matchContr(0).toString]" UseDefaultEncoding="False">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -504,7 +521,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AppendLine>
-                    <uix:NGetText DisplayName="Get Text '1cv8.exe Бухгалтерия'" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
+                    <uix:NGetText DisplayName="Get Text '1cv8.exe Бухгалтерия'" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="fac6e06a-c2d4-4985-b07b-2e415326a823" Version="V1">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable DesignTimeRectangle="1313, 394, 110, 29" FriendlyName="'698,88 Кредит'" FullSelectorArgument="&lt;uia name='По данным организации (1)' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia name='698,88 Кредит' /&gt;" FuzzySelectorArgument="&lt;uia name='По данным организации (1)' role='вкладка' /&gt;&lt;uia role='таблицу' /&gt;&lt;uia role='' automationid='' /&gt;" Guid="1df36c6d-cc52-4b80-843b-8048f080fff5" InformativeScreenshot="72c040c3e0b298ad9aa05d7a5fc82d74.png" ScopeSelectorArgument="[String.Format(&quot;&lt;wnd app='{0}' cls='V8TopLevelFrameSDI' title='Бухгалтерия для Беларуси, редакция 2.1. Локализация для Республи*' /&gt;&quot;, app)]" SearchSteps="FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
@@ -524,7 +541,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <ui:Matches BuilderPattern="(\d{10})" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[findOuttxt.ToLower]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Цифра&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;10&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Точно&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="((?! кредит).)*" RegexOption="IgnoreCase, Compiled, IgnorePatternWhitespace" Result="[matchContr]">
+                    <ui:Matches BuilderPattern="(\d{10})" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[findOuttxt.ToLower]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Цифра&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;10&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Точно&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="((?! кредит).)*" RegexOption="IgnoreCase, Compiled, IgnorePatternWhitespace" Result="[matchContr]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -532,7 +549,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:Matches>
-                    <ui:WriteCell Cell="B3" DisplayName="Write Sum" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Buffer" Text="[matchContr(0).toString]" WorkbookPath="Data\Output\1c8BuhBuf.xlsx">
+                    <ui:WriteCell Cell="B3" DisplayName="Write Sum" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Buffer" Text="[matchContr(0).toString]" WorkbookPath="Data\Output\1c8BuhBuf.xlsx">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -540,7 +557,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteCell>
-                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="436,51" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; suma is &quot;  +  matchContr(0).ToString]" UseDefaultEncoding="False">
+                    <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="AppendLine_6" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; suma is &quot;  +  matchContr(0).ToString]" UseDefaultEncoding="False">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -549,7 +566,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:AppendLine>
                   </Sequence>
-                  <Sequence DisplayName="Exit from Akt form" sap:VirtualizedContainerService.HintSize="478,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence DisplayName="Exit from Akt form" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -558,7 +575,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" Shortcuts="[d(hk)][k(esc)][u(hk)][d(hk)][k(right)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V1" />
                   </Sequence>
-                  <Sequence DisplayName="Exit from 1cv8 Buh_RB" sap:VirtualizedContainerService.HintSize="478,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Exit from 1cv8 Buh_RB" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -577,7 +594,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NKeyboardShortcuts>
                   </Sequence>
-                  <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="478,51" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; 1C Buh is closed&quot;]" UseDefaultEncoding="False">
+                  <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="526,51" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; 1C Buh is closed&quot;]" UseDefaultEncoding="False">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
