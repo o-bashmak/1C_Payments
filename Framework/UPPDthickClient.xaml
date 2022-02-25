@@ -729,38 +729,53 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'панель'" sap:VirtualizedContainerService.HintSize="830,682" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'панель'" sap:VirtualizedContainerService.HintSize="554,514" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="526,466" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="250,298" sap2010:WorkflowViewState.IdRef="Sequence_56">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Copy Selected Text" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="CopySelectedText_1">
-                            <ui:CopySelectedText.Result>
-                              <OutArgument x:TypeArguments="x:String">[in_description]</OutArgument>
-                            </ui:CopySelectedText.Result>
-                          </ui:CopySelectedText>
-                          <If Condition="[in_description.Contains(System.DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;))]" DisplayName="If record contains now date" sap:VirtualizedContainerService.HintSize="484,248" sap2010:WorkflowViewState.IdRef="If_1">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="208,51" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,400" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:CopySelectedText SendWindowMessages="{x:Null}" TimeoutMS="{x:Null}" ContinueOnError="True" DisplayName="Copy Selected Text" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="CopySelectedText_1">
+                                  <ui:CopySelectedText.Result>
+                                    <OutArgument x:TypeArguments="x:String">[in_description]</OutArgument>
+                                  </ui:CopySelectedText.Result>
+                                </ui:CopySelectedText>
+                                <If Condition="[in_description.Contains(System.DateTime.Now.ToString(&quot;dd.MM.yyyy&quot;))]" DisplayName="If record contains now date" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="If_1">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </If>
+                              </Sequence>
+                            </ui:CommentOut.Body>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If.Then>
-                              <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; Zayavka is created successfully&quot;]" UseDefaultEncoding="False">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                              </ui:AppendLine>
-                            </If.Then>
-                          </If>
-                          <ui:Break sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                          </ui:CommentOut>
+                          <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="208,51" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; Zayavka is created successfully&quot;]" UseDefaultEncoding="False">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:AppendLine>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Break_1" />
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
