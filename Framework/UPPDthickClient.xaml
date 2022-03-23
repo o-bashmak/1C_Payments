@@ -7,7 +7,7 @@
     <x:Property Name="in_CompanyFilter" Type="InArgument(x:String)" />
     <x:Property Name="in_nameLogFile" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1055,3985</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1209,3760</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="90">
@@ -106,7 +106,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="598,3920" sap2010:WorkflowViewState.IdRef="Sequence_39">
+  <Sequence DisplayName="UPPD thick Client" sap:VirtualizedContainerService.HintSize="598,3695" sap2010:WorkflowViewState.IdRef="Sequence_39">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="dateSet" />
     </Sequence.Variables>
@@ -115,13 +115,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="556,3828" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: УППД /Шарипкин Олег Игоревич/" sap:VirtualizedContainerService.HintSize="556,3603" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bd472394-354f-46fb-b914-132611a35f6e" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3539" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,3314" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -144,10 +144,10 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NKeyboardShortcuts>
-            <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="480,418" sap2010:WorkflowViewState.IdRef="Sequence_41">
+            <Sequence DisplayName="Open zayakva" sap:VirtualizedContainerService.HintSize="480,66" sap2010:WorkflowViewState.IdRef="Sequence_41">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -377,7 +377,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="480,1933" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <Sequence DisplayName="FullFill a Zayavka" sap:VirtualizedContainerService.HintSize="480,2060" sap2010:WorkflowViewState.IdRef="Sequence_44">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -694,10 +694,10 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Ctrl+Enter" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_14" Shortcuts="[d(hk)][d(ctrl)][k(enter)][u(ctrl)][u(hk)]" Version="V1">
+              <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Ctrl+Enter" sap:VirtualizedContainerService.HintSize="438,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_14" Shortcuts="[d(hk)][d(ctrl)][k(enter)][u(ctrl)][u(hk)]" Version="V1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -729,15 +729,15 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'панель'" sap:VirtualizedContainerService.HintSize="554,514" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
+                    <uix:NCheckState Exists="{x:Null}" DisplayName="Check App State 'панель'" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="bd472394-354f-46fb-b914-132611a35f6e" Version="V1">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="250,298" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="604,298" sap2010:WorkflowViewState.IdRef="Sequence_56">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="208,51" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_21">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="526,400" sap2010:WorkflowViewState.IdRef="Sequence_60">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -767,7 +767,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="208,51" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; Zayavka is created successfully&quot;]" UseDefaultEncoding="False">
+                          <ui:AppendLine DisplayName="Append Line" FileName="[in_nameLogFile]" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[System.DateTime.Now.ToString(&quot;hh:mm:ss&quot;) + &quot; Zayavka is created successfully&quot;]" UseDefaultEncoding="False">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -775,7 +775,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
-                          <ui:Break sap:VirtualizedContainerService.HintSize="208,22" sap2010:WorkflowViewState.IdRef="Break_1" />
+                          <ui:Break sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Break_1" />
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
